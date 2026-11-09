@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Chronos Lifelog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Privacy Policy</h1>
+            <p class="subtitle">Chronos Lifelog - Private Edge Geotemporal Timeline Engine</p>
+            <p class="date">Effective Date: November 04, 2026</p>
+        </header>
+
+        <section class="card">
+            <h2>1. Zero-Cloud Privacy Guarantee</h2>
+            <p>Chronos Lifelog is built from the ground up on the principle of <strong>Zero-Cloud Execution</strong>. The application binary completely omits the <code>android.permission.INTERNET</code> declaration. Under the Android operating system security model, the app is physically incapable of opening network sockets, pinging remote servers, transmitting telemetry, or sending data to third parties.</p>
+        </section>
+
+        <section class="card">
+            <h2>2. Location & Motion Data</h2>
+            <p>Chronos Lifelog requests <code>ACCESS_FINE_LOCATION</code> and <code>ACTIVITY_RECOGNITION</code> permissions strictly to compute on-device spatio-temporal trajectories and identify dwell clusters locally on your phone. All coordinates, elevation tracks, and activity classifications are stored in an on-device SQLite database encrypted with AES-256 via the hardware Android StrongBox enclave. No location data ever leaves your device.</p>
+        </section>
+
+        <section class="card">
+            <h2>3. Audio Sensor Policy (Zero Raw Audio Recording)</h2>
+            <p>Chronos Lifelog utilizes the microphone solely to calculate momentary sound pressure levels (SPL decibels) and spectral variance to categorize ambient environments (such as library, street, or train). <strong>Raw audio is never recorded, never transcribed, never saved to disk, and never transmitted.</strong> All audio buffers are sampled volatilely in RAM and discarded within milliseconds.</p>
+        </section>
+
+        <section class="card">
+            <h2>4. Data Sovereignty & Deletion</h2>
+            <p>You have absolute sovereignty over your lifelog data. You can export your full geotemporal history to standard GeoJSON at any time, or execute a <strong>Cryptographic Zero-Fill Purge</strong> from the Airgap Shield screen to permanently overwrite and destroy all local logs.</p>
+        </section>
+
+        <section class="card">
+            <h2>5. Contact Information</h2>
+            <p>For architectural verification or privacy inquiries, contact: <a href="mailto:privacy@nextgen.mobile">privacy@nextgen.mobile</a></p>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 NextGen Mobile Engineering Labs. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
